@@ -1,0 +1,7 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.section-1 {
+  background-color: rgba(0, 0, 0, 0.274);
+}
