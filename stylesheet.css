@@ -25,7 +25,16 @@ a {
   text-decoration: none;
   color: #4b451b;
   display: block;
+}
+
+.nav-link {
   padding: 3rem;
+}
+
+.back {
+  padding-left: 2rem;
+  padding-top: 2rem;
+  max-width: 10rem;
 }
 
 * {
@@ -59,7 +68,7 @@ a {
 .bg-2 {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(255, 230, 184);
+  background-color: #f8f2e9;
 }
 
 .text-center {
@@ -100,4 +109,8 @@ a {
 
 .full-height {
   height: 100%;
+}
+
+.margins {
+  margin: 2rem;
 }
