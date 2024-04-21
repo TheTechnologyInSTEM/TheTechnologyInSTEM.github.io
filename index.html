@@ -30,14 +30,20 @@
         </div>
         <div class="text-center">
           <div class="flex-container flex-split full-height center-items">
-            <button class="draw-border" href="#about">About Us</button>
-            <button class="draw-border">Resources</button>
-            <button class="draw-border">Photos</button>
-            <button class="draw-border">Support</button>
+            <button class="draw-border">
+              <a href="#about">About Us</a>
+            </button>
+            <button class="draw-border">
+              <a href="#resources">Resources</a>
+            </button>
+            <button class="draw-border"><a href="#photos">Photos</a></button>
+            <button class="draw-border">
+              <a href="#support">Support Us</a>
+            </button>
           </div>
         </div>
       </div>
-      <div class="text-center">
+      <div class="text-center" style="width: 50%; margin: auto">
         <h1>
           Spreading STEM education in the San Fernando Valley by providing free
           programming workshops and courses to underprivileged communities!
@@ -68,6 +74,12 @@
         <div class="text-center">2</div>
       </div>
     </div>
+    <!--SCROLL SCRIPT-->
+    <script>
+      function scrollTo(id) {
+        document.getElementById(id).scrollIntoView();
+      }
+    </script>
     <!--CURSOR SCRIPT-->
     <script src="cursor.js"></script>
   </body>

@@ -24,7 +24,7 @@
   border-top-width: 4px;
   border-right-width: 4px;
 }
-.draw-border:hover {
+.draw-border:hover > a {
   color: #006ba8;
 }
 .draw-border:hover::before,
