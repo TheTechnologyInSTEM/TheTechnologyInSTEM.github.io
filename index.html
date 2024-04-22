@@ -22,61 +22,70 @@
     <!--CURSOR HTML-->
     <div class="cursor-dot content-desktop" data-cursor-dot></div>
     <div class="cursor-outline content-desktop" data-cursor-outline></div>
-
-    <!--SITE HTML STARTS HERE-->
-    <div class="bg-1" id="home">
-      <div class="center flex-container full-width">
-        <div class="text-center">
-          <img class="logo" src="logo.png" />
-        </div>
-        <div class="text-center">
-          <div class="flex-container flex-split full-height center-items">
-            <button class="draw-border">
-              <a class="nav-link" href="#about">About Us</a>
-            </button>
-            <button class="draw-border">
-              <a class="nav-link" href="#resources">Learn</a>
-            </button>
-            <button class="draw-border">
-              <a class="nav-link" href="#photos">Photos</a>
-            </button>
-            <button class="draw-border">
-              <a class="nav-link" href="#support">Support Us</a>
-            </button>
+    <!--SITE HTML STARTS HERE FOR MOBILE-->
+    <div class="content-mobile">
+      <h1 class="text-center margins">
+        Sorry!<br />Support for mobile devices still under development 😭
+      </h1>
+    </div>
+    <!--SITE HTML STARTS HERE FOR DESKTOP-->
+    <div class="content-desktop">
+      <div class="bg-1" id="home">
+        <div class="center flex-container full-width">
+          <div class="text-center">
+            <img class="logo" src="logo.png" />
+          </div>
+          <div class="text-center">
+            <div class="flex-container flex-split full-height center-items">
+              <button class="draw-border">
+                <a class="nav-link" href="#about">About Us</a>
+              </button>
+              <button class="draw-border">
+                <a class="nav-link" href="#resources">Learn</a>
+              </button>
+              <button class="draw-border">
+                <a class="nav-link" href="#photos">Photos</a>
+              </button>
+              <button class="draw-border">
+                <a class="nav-link" href="#support">Support Us</a>
+              </button>
+            </div>
           </div>
         </div>
+        <div class="text-center" style="width: 50%; margin: auto">
+          <h1>
+            Spreading STEM education in the San Fernando Valley by providing
+            free programming workshops and courses to underprivileged
+            communities!
+          </h1>
+        </div>
       </div>
-      <div class="text-center" style="width: 50%; margin: auto">
-        <h1>
-          Spreading STEM education in the San Fernando Valley by providing free
-          programming workshops and courses to underprivileged communities!
-        </h1>
+      <div class="bg-2" id="about">
+        <div class="margins">
+          <a class="back" href="#home"><<< Back</a>
+          <h1 class="text-center">About Us</h1>
+        </div>
+      </div>
+      <div class="bg-1" id="resources">
+        <div class="margins">
+          <a class="back" href="#home"><<< Back</a>
+          <h1 class="text-center">Learn</h1>
+        </div>
+      </div>
+      <div class="bg-2" id="photos">
+        <div class="margins">
+          <a class="back" href="#home"><<< Back</a>
+          <h1 class="text-center">Photos</h1>
+        </div>
+      </div>
+      <div class="bg-1" id="support">
+        <div class="margins">
+          <a class="back" href="#home"><<< Back</a>
+          <h1 class="text-center">Support Us</h1>
+        </div>
       </div>
     </div>
-    <div class="bg-2" id="about">
-      <div class="margins">
-        <a class="back" href="#home"><<< Back</a>
-        <h1 class="text-center">About Us</h1>
-      </div>
-    </div>
-    <div class="bg-1" id="resources">
-      <div class="margins">
-        <a class="back" href="#home"><<< Back</a>
-        <h1 class="text-center">Learn</h1>
-      </div>
-    </div>
-    <div class="bg-2" id="photos">
-      <div class="margins">
-        <a class="back" href="#home"><<< Back</a>
-        <h1 class="text-center">Photos</h1>
-      </div>
-    </div>
-    <div class="bg-1" id="support">
-      <div class="margins">
-        <a class="back" href="#home"><<< Back</a>
-        <h1 class="text-center">Support Us</h1>
-      </div>
-    </div>
+
     <!--SCROLL SCRIPT-->
     <script>
       function scrollTo(id) {
