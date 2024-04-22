@@ -120,3 +120,11 @@ h1 {
 .margins {
   margin: 2rem;
 }
+
+.aboutus-pic {
+  max-width: 25vw;
+  max-height: 25vh;
+  padding: 1rem;
+  background-color: #ffac30;
+  border: 4px solid black;
+}
