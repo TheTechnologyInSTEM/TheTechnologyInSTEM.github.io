@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="stylesheet.css" />
     <!--BUTTON ANIMATION CSS-->
     <link rel="stylesheet" href="buttonanim.css" />
+
     <!--CURSOR CSS-->
     <link rel="stylesheet" href="cursor.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,20 +30,23 @@
     <!--SITE HTML STARTS HERE FOR MOBILE-->
     <div class="content-mobile">
       <h1 class="text-center center margins">
-        Sorry!<br />Support for mobile devices still under development 😭
+        Sorry!<br />Support for mobile devices & small screens still under
+        development 😭
       </h1>
     </div>
     <!--SITE HTML STARTS HERE FOR DESKTOP-->
     <div class="content-desktop">
       <div class="bg-1" id="home">
-        <div class="center flex-container full-width">
-          <div class="text-center">
+        <div class="center flex-container full-width full-height">
+          <div class="text-center center">
             <img class="logo" src="logo.png" />
           </div>
           <div class="text-center">
             <div class="flex-container flex-split full-height center-items">
-              <button class="draw-border">
-                <a class="nav-link" href="#about">About Us</a>
+              <button class="draw-border" id="about-button">
+                <a class="nav-link" href="#about" onclick="typethis()"
+                  >About Us</a
+                >
               </button>
               <button class="draw-border">
                 <a class="nav-link" href="#resources">Learn</a>
@@ -56,24 +60,32 @@
             </div>
           </div>
         </div>
-        <div class="text-center" style="width: 50%; margin: auto">
-          <h1>
-            Spreading STEM education in the San Fernando Valley by providing
-            free programming workshops and courses to underprivileged
-            communities!
-          </h1>
-        </div>
       </div>
       <div class="bg-2" id="about">
         <div class="margins">
-          <a class="back" href="#home"><<< Back</a>
+          <a class="nav-link" href="#home"><<< Back</a>
           <h1 class="text-center">About Us</h1>
+          <div class="text-center" style="width: 50%; margin: auto">
+            <h1>
+              The T in STEM is an organization that seeks to spread education in
+              the computer science field to underprivileged communities, founded
+              by three high school students:
+            </h1>
+          </div>
+          <div class="flex-container text-center">
+            <div><h1 id="raj"></h1></div>
+            <div><h1 id="kaiyo"></h1></div>
+            <div><h1 id="freddy"></h1></div>
+          </div>
         </div>
       </div>
       <div class="bg-1" id="resources">
         <div class="margins">
           <a class="back" href="#home"><<< Back</a>
           <h1 class="text-center">Learn</h1>
+          <div class="text-center center">
+            <h1>This section still under development!</h1>
+          </div>
         </div>
       </div>
       <div class="bg-2" id="photos">
@@ -85,7 +97,9 @@
       <div class="bg-1" id="support">
         <div class="margins">
           <a class="back" href="#home"><<< Back</a>
-          <h1 class="text-center">Support Us</h1>
+          <h1 class="text-center">Interested in supporting our mission?</h1>
+
+          <h1 class="text-center"></h1>
         </div>
       </div>
     </div>
@@ -98,5 +112,9 @@
     </script>
     <!--CURSOR SCRIPT-->
     <script src="cursor.js"></script>
+    <!--TYPED.jS-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="typing.js"></script>
   </body>
 </html>

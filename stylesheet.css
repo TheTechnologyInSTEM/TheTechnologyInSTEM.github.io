@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: #f8f2e9;
 }
 
 html {
@@ -16,19 +17,24 @@ button {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   line-height: 1.5;
-  letter-spacing: 0.05rem;
-  max-width: 25rem;
-  max-height: 10rem;
+  max-width: 20vw;
+  max-height: 20vh;
+  margin: 1rem;
 }
 
 a {
   text-decoration: none;
   color: #4b451b;
   display: block;
+  font-size: 3vh;
+}
+
+h1 {
+  font-size: 3vh;
 }
 
 .nav-link {
-  padding: 3rem;
+  padding: 5vh;
 }
 
 .back {
@@ -51,8 +57,8 @@ a {
 }
 
 .logo {
-  width: 45rem;
-  height: 45rem;
+  max-width: 60vw;
+  max-height: 60vh;
 }
 
 .bg-show {

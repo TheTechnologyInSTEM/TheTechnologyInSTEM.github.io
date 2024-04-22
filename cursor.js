@@ -29,7 +29,6 @@ window.addEventListener("mousemove", function (e) {
 });
 
 window.addEventListener("mousedown", function (e) {
-  console.log("HEY 1!");
   cursorOutline.animate(
     {
       width: `${outlineClickSize}px`,
