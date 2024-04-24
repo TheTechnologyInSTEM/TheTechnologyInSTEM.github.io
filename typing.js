@@ -17,7 +17,7 @@ function typethis() {
     loop: false,
   });
   typed2 = new Typed("#freddy", {
-    strings: ["Fredric Andre De Quiros"],
+    strings: ["Fredric De Quiros"],
     typeSpeed: 50,
     backSpeed: 50,
     showCursor: false,
