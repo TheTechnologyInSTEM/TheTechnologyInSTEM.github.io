@@ -31,6 +31,11 @@ a {
   color: #4b451b;
   display: block;
   font-size: 3vh;
+  transition-duration: 0.4s;
+}
+
+a:hover {
+  color: rgb(91, 162, 255);
 }
 
 h1 {
@@ -111,9 +116,11 @@ h1 {
 
 .flex-img {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 1rem;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 .flex-split > * {
@@ -131,7 +138,9 @@ h1 {
 }
 
 .margins {
-  margin: 2rem;
+  margin-top: 3vh;
+  margin-left: 8vw;
+  margin-right: 8vw;
 }
 
 .aboutus-pic {
@@ -157,4 +166,8 @@ h1 {
 
 .about-me {
   font-size: 0.6vw;
+}
+
+.padding {
+  padding: 2rem;
 }
