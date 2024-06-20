@@ -1,12 +1,13 @@
 import { Paths } from "./Paths";
 import Header from "./components/Header";
+import Button from "./components/Button";
 
 function App() {
   return (
-    <>
-      <Header></Header>
+    <div className="mx-3 my-2">
+      <Header />
       <Paths />
-    </>
+    </div>
   );
 }
 
