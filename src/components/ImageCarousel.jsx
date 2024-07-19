@@ -1,122 +1,110 @@
-import { React, useState } from "react";
+import React from "react";
 
-function ImageCarousel({ slides }) {
+const slides = [
+  {
+    image: "https://i.postimg.cc/pT93jhPh/portrait-of-black-man.jpg",
+    alt: "Slide 1",
+    caption1: "Destination activities",
+    caption2: "Go glacier hiking",
+    buttonText: "See Where",
+    buttonTarget: "#booking-modal",
+  },
+  {
+    image: "https://i.postimg.cc/t45bRjmw/Untitled-presentation-2.png",
+    alt: "Slide 2",
+    caption1: "Destination activities",
+    caption2: "Go glacier hiking",
+    buttonText: "See Where",
+    buttonTarget: "#booking-modal",
+  },
+  {
+    image: "https://i.postimg.cc/dtWRbW2F/pexels-francesco-ungaro-1525041.jpg",
+    alt: "Slide 3",
+    caption1: "Destination activities",
+    caption2: "Go glacier hiking",
+    buttonText: "Book a tour",
+    buttonTarget: "#booking-modal",
+  },
+  {
+    image: "https://i.postimg.cc/jjrSjTKr/unnamed-1.jpg",
+    alt: "Slide 4",
+    caption1: "Destination activities",
+    caption2: "Go glacier hiking",
+    buttonText: "Book a tour",
+    buttonTarget: "#booking-modal",
+  },
+  {
+    image: "https://i.postimg.cc/t45bRjmw/Untitled-presentation-2.png",
+    alt: "Slide 5",
+    caption1: "Want to teach about tech?",
+    caption2: "Let's Collaborate!",
+    buttonText: "Contact Us",
+    buttonTarget: "#booking-modal",
+  },
+];
+
+function ImageCarousel() {
   return (
-    <>
-      <div
-        id="hero-carousel"
-        className="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div className="carousel-indicators">
+    <div id="hero-carousel" className="carousel slide" data-bs-ride="carousel">
+      <div className="carousel-indicators">
+        {slides.map((_, index) => (
           <button
+            key={index}
             type="button"
             data-bs-target="#hero-carousel"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
+            data-bs-slide-to={index}
+            className={index === 0 ? "active" : ""}
           ></button>
-          <button
-            type="button"
-            data-bs-target="#hero-carousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#hero-carousel"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-
-        <div className="carousel-inner">
-          <div className="carousel-item active c-item">
-            <img
-              src="https://images.unsplash.com/photo-1579033461380-adb47c3eb938?fit=crop&w=1964&q=100"
-              className="d-block w-100 c-img"
-              alt="Slide 1"
-            />
-            <div className="carousel-caption top-0 mt-4">
-              <p className="mt-5 fs-3 text-uppercase">
-                Discover the hidden world
-              </p>
-              <h1 className="display-1 fw-bolder text-capitalize">
-                The Aurora Tours
-              </h1>
-              <button className="btn btn-primary px-4 py-2 fs-5 mt-5">
-                Book a tour
-              </button>
-            </div>
-          </div>
-          <div className="carousel-item c-item">
-            <img
-              src="https://images.unsplash.com/photo-1516466723877-e4ec1d736c8a?fit=crop&w=2134&q=100"
-              className="d-block w-100 c-img"
-              alt="Slide 2"
-            />
-            <div className="carousel-caption top-0 mt-4">
-              <p className="text-uppercase fs-3 mt-5">The season has arrived</p>
-              <p className="display-1 fw-bolder text-capitalize">
-                3 available tours
-              </p>
-              <button
-                className="btn btn-primary px-4 py-2 fs-5 mt-5"
-                data-bs-toggle="modal"
-                data-bs-target="#booking-modal"
-              >
-                Book a tour
-              </button>
-            </div>
-          </div>
-          <div className="carousel-item c-item">
-            <img
-              src="https://images.unsplash.com/photo-1612686635542-2244ed9f8ddc?fit=crop&w=2070&q=100"
-              className="d-block w-100 c-img"
-              alt="Slide 3"
-            />
-            <div className="carousel-caption top-0 mt-4">
-              <p className="text-uppercase fs-3 mt-5">Destination activities</p>
-              <p className="display-1 fw-bolder text-capitalize">
-                Go glacier hiking
-              </p>
-              <button
-                className="btn btn-primary px-4 py-2 fs-5 mt-5"
-                data-bs-toggle="modal"
-                data-bs-target="#booking-modal"
-              >
-                Book a tour
-              </button>
-            </div>
-          </div>
-        </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#hero-carousel"
-          data-bs-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#hero-carousel"
-          data-bs-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
+        ))}
       </div>
-    </>
+
+      <div className="carousel-inner">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`carousel-item c-item ${index === 0 ? "active" : ""}`}
+          >
+            <img
+              src={slide.image}
+              className="d-block w-100 c-img"
+              alt={slide.alt}
+            />
+            <div className="carousel-caption translate-middle start-50 top-50">
+              <p className="mt-5 fs-1 text-uppercase">{slide.caption1}</p>
+              <h1 className="display-1 fw-bolder text-capitalize">
+                {slide.caption2}
+              </h1>
+              <button
+                className="btn btn-primary px-4 py-3 fs-2 mt-5"
+                data-bs-toggle="modal"
+                data-bs-target={slide.buttonTarget}
+              >
+                {slide.buttonText}
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <button
+        className="carousel-control-prev"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="prev"
+      >
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button
+        className="carousel-control-next"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="next"
+      >
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+      </button>
+    </div>
   );
 }
 
