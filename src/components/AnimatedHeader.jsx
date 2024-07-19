@@ -56,7 +56,7 @@ const AnimatedHeader = ({ children }) => {
               className="slide-out-1 center"
               ref={(el) => (navItems.current[0] = el)}
             >
-              <a href="#home" className="center">
+              <a href="#" className="center">
                 Home
               </a>
             </li>
@@ -65,8 +65,8 @@ const AnimatedHeader = ({ children }) => {
               className="slide-out-2 center"
               ref={(el) => (navItems.current[1] = el)}
             >
-              <a href="#about" className="center">
-                About
+              <a href="about" className="center">
+                About Us
               </a>
             </li>
             <li
@@ -74,8 +74,8 @@ const AnimatedHeader = ({ children }) => {
               className="slide-out-3 center"
               ref={(el) => (navItems.current[2] = el)}
             >
-              <a href="#skills" className="center">
-                Skills
+              <a href="learn" className="center">
+                Learn
               </a>
             </li>
             <li
@@ -83,8 +83,8 @@ const AnimatedHeader = ({ children }) => {
               className="slide-out-4 center"
               ref={(el) => (navItems.current[3] = el)}
             >
-              <a href="#projects" className="center">
-                Projects
+              <a href="program" className="center">
+                Programs
               </a>
             </li>
             <li
@@ -92,8 +92,8 @@ const AnimatedHeader = ({ children }) => {
               className="slide-out-5 center"
               ref={(el) => (navItems.current[4] = el)}
             >
-              <a href="#contact" className="center">
-                Contact
+              <a href="contact" className="center">
+                Contact Us
               </a>
             </li>
           </ul>
