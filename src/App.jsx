@@ -4,7 +4,7 @@ import Button from "./components/Button";
 
 function App() {
   return (
-    <div className="mx-3 my-2">
+    <div>
       <Header />
       <Paths />
     </div>

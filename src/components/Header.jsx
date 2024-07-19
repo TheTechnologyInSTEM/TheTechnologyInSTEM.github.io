@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function Header(props) {
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="pt-1 px-2 navbar bg-dark navbar-dark navbar-expand-lg">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           The T in STEM
