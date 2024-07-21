@@ -2,7 +2,7 @@ import React from "react";
 
 const slides = [
   {
-    image: "https://i.postimg.cc/pT93jhPh/portrait-of-black-man.jpg",
+    image: "https://i.postimg.cc/v87L4W2N/unnamed-2.jpg",
     alt: "Slide 1",
     caption1: "Made for Students, by Students",
     caption2: "The T in STEM",
@@ -10,7 +10,7 @@ const slides = [
     buttonLink: "about",
   },
   {
-    image: "https://i.postimg.cc/t45bRjmw/Untitled-presentation-2.png",
+    image: "https://i.postimg.cc/1z94Yqrf/unnamed-3.jpg",
     alt: "Slide 2",
     caption1: "Creating Opportunities Through Code",
     caption2: "In-Person Programs",
@@ -18,7 +18,7 @@ const slides = [
     buttonLink: "program",
   },
   {
-    image: "https://i.postimg.cc/dtWRbW2F/pexels-francesco-ungaro-1525041.jpg",
+    image: "https://i.postimg.cc/66mXkvty/Screenshot-2024-07-20-222157.png",
     alt: "Slide 3",
     caption1: "Python, Java, & Web Development",
     caption2: "Interested?",
@@ -34,7 +34,7 @@ const slides = [
     buttonLink: "learn/page",
   },
   {
-    image: "https://i.postimg.cc/t45bRjmw/Untitled-presentation-2.png",
+    image: "https://i.postimg.cc/jSq4yLn4/unnamed-5.jpg",
     alt: "Slide 5",
     caption1: "Want to teach about tech?",
     caption2: "Let's Collaborate!",
