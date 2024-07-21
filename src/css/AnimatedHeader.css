@@ -21,7 +21,7 @@ html {
 
 a:link,
 a:visited {
-  color: #fff;
+  color: black;
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.3s;
@@ -73,23 +73,23 @@ nav ul li {
 }
 
 nav li:nth-of-type(1) {
-  background-color: #626059;
+  background-color: #bad1e2;
 }
 
 nav li:nth-of-type(2) {
-  background-color: #9d5543;
+  background-color: #a6bfd3;
 }
 
 nav li:nth-of-type(3) {
-  background-color: #3d405b;
+  background-color: #91adc3;
 }
 
 nav li:nth-of-type(4) {
-  background-color: #5a7d6c;
+  background-color: #7d9bb4;
 }
 
 nav li:nth-of-type(5) {
-  background-color: #917a56;
+  background-color: #547795;
 }
 
 nav li a {
@@ -214,7 +214,6 @@ section {
   height: 100vh;
   overflow-y: hidden;
   position: relative;
-  text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-align: center;
 }

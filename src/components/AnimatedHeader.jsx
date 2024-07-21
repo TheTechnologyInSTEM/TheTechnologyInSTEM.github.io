@@ -56,7 +56,7 @@ const AnimatedHeader = ({ children }) => {
               className="slide-out-1 center"
               ref={(el) => (navItems.current[0] = el)}
             >
-              <a href="#" className="center">
+              <a href="/" className="center">
                 Home
               </a>
             </li>
