@@ -1,13 +1,19 @@
-.carousel-item {
-  height: 32rem;
-  background: #777;
-  position: relative;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding-bottom: 50px;
+.c-img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: blur(1rem) brightness(0.4);
+}
+
+.carousel-inner {
+  width: 100vw;
+  height: 100vh;
 }

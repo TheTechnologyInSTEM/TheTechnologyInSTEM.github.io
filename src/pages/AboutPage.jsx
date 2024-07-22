@@ -1,3 +1,12 @@
+import AnimatedHeader from "../components/AnimatedHeader";
+import ImageCarousel from "../components/ImageCarousel";
+
 export const AboutPage = () => {
-  return <h1>About Page</h1>;
+  return (
+    <>
+      <AnimatedHeader>
+        <h1 className="logo fw-bold">About Us</h1>
+      </AnimatedHeader>
+    </>
+  );
 };

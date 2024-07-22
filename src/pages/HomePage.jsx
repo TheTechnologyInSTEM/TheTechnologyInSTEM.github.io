@@ -1,20 +1,11 @@
 import ImageCarousel from "../components/ImageCarousel";
-import { slides } from "../data/carouseldata";
+import AnimatedHeader from "../components/AnimatedHeader";
 
 export const HomePage = () => {
-  const containerStyles = {
-    maxWidth: "1200px",
-    width: "100%",
-    aspectRatio: "10 / 6",
-    margin: "0 auto",
-  };
-
   return (
-    <>
-      <h1>Hello!</h1>
-      <div style={containerStyles}>
-        <ImageCarousel slides={slides}></ImageCarousel>
-      </div>
-    </>
+    <AnimatedHeader>
+      <h1 className="logo fw-bold text-light">The T in STEM</h1>
+      <ImageCarousel></ImageCarousel>
+    </AnimatedHeader>
   );
 };

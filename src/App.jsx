@@ -1,11 +1,11 @@
 import { Paths } from "./Paths";
 import Header from "./components/Header";
+import AnimatedHeader from "./components/AnimatedHeader";
 import Button from "./components/Button";
 
 function App() {
   return (
-    <div className="mx-3 my-2">
-      <Header />
+    <div>
       <Paths />
     </div>
   );
