@@ -50,7 +50,7 @@ const AnimatedHeader = ({ children }) => {
     <>
       <div className="overlay overlay-slide-left" id="overlay" ref={overlay}>
         <nav>
-          <ul>
+          <ul className="nav-ul">
             <li
               id="nav-1"
               className="slide-out-1 center"

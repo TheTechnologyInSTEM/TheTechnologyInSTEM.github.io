@@ -19,8 +19,8 @@ html {
   overflow-x: hidden;
 }
 
-a:link,
-a:visited {
+.nav-ul a:link,
+.nav-ul a:visited {
   color: black;
   text-decoration: none;
   text-transform: uppercase;
@@ -61,44 +61,44 @@ a:visited {
 }
 
 /* NAV MENU ITEMS */
-nav ul {
+.nav-ul {
   height: 100vh;
   height: 100svh;
   list-style-type: none;
   padding: 0;
 }
 
-nav ul li {
+.nav-ul li {
   height: 20%;
 }
 
-nav li:nth-of-type(1) {
+.nav-ul li:nth-of-type(1) {
   background-color: #bad1e2;
 }
 
-nav li:nth-of-type(2) {
+.nav-ul li:nth-of-type(2) {
   background-color: #a6bfd3;
 }
 
-nav li:nth-of-type(3) {
+.nav-ul li:nth-of-type(3) {
   background-color: #91adc3;
 }
 
-nav li:nth-of-type(4) {
+.nav-ul li:nth-of-type(4) {
   background-color: #7d9bb4;
 }
 
-nav li:nth-of-type(5) {
+.nav-ul li:nth-of-type(5) {
   background-color: #547795;
 }
 
-nav li a {
+.nav-ul li a {
   letter-spacing: 0.4rem;
   font-size: 2rem;
 }
 
-nav li a:hover,
-nav li a:active {
+.nav-ul li a:hover,
+.nav-ul li a:active {
   transform: scale(1.2);
 }
 
