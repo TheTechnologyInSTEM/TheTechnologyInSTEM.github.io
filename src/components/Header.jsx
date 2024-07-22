@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-function Header(props) {
+const Header = (props) => {
   return (
-    <nav className="pt-1 px-2 navbar fixed-top bg-dark navbar-dark">
+    <nav className={"pt-1 px-2 navbar fixed-top navbar-expand-lg " + props.classes}>
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          The T in STEM
+          {props.text}
         </a>
         <button
           className="navbar-toggler"
@@ -28,6 +28,11 @@ function Header(props) {
             <li className="nav-item">
               <a className="nav-link" href="/learn">
                 Learn
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/program">
+                Programs
               </a>
             </li>
             <li className="nav-item">

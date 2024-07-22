@@ -1,3 +1,9 @@
+import Header from "../components/Header"
+
 export const LearnPage = () => {
-  return <h1>Learn Page</h1>;
+  return (
+    <>
+      <Header classes="pt-3 px-3" text="Learn Coding"></Header>
+    </>
+  );
 };
