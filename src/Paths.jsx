@@ -4,6 +4,8 @@ import { AboutPage } from "./pages/AboutPage";
 import { ContactPage } from "./pages/ContactPage";
 import { LearnPage } from "./pages/LearnPage";
 import { ProgramPage } from "./pages/ProgramPage";
+import JavaPage from "./pages/JavaPage";
+import PythonVideoPage from "./pages/PythonVideoPage";
 
 export const Paths = () => {
   return (
@@ -16,8 +18,9 @@ export const Paths = () => {
           <Route path="learn" element={<LearnPage />} />
           <Route path="community" element={<ProgramPage />} />
           <Route path="learn/python" element={<ProgramPage />} />
-          <Route path="learn/java" element={<ProgramPage />} />
+          <Route path="learn/java" element={<JavaPage />} />
           <Route path="learn/cplusplus" element={<ProgramPage />} />
+          <Route path="learn/python/videos" element={<PythonVideoPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
