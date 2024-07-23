@@ -7,7 +7,7 @@ const Header = (props) => {
     >
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          {props.text}
+          The T in STEM
         </a>
         <button
           className="navbar-toggler"
@@ -27,11 +27,7 @@ const Header = (props) => {
                 Home
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/community">
-                Community Impact
-              </a>
-            </li>
+
             <li className="nav-item">
               <a className="nav-link" href="/about">
                 About Us
@@ -40,6 +36,11 @@ const Header = (props) => {
             <li className="nav-item">
               <a className="nav-link" href="/contact">
                 Contact Us
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/community">
+                Community Impact
               </a>
             </li>
             <li class="nav-item dropdown">
