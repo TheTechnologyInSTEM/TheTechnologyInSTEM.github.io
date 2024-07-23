@@ -4,11 +4,7 @@ import AnimatedHeader from "./components/AnimatedHeader";
 import Button from "./components/Button";
 
 function App() {
-  return (
-    <div>
-      <Paths />
-    </div>
-  );
+  return <Paths />;
 }
 
 export default App;
