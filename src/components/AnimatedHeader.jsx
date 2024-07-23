@@ -83,8 +83,8 @@ const AnimatedHeader = ({ children }) => {
               className="slide-out-4 center"
               ref={(el) => (navItems.current[3] = el)}
             >
-              <a href="program" className="center">
-                Programs
+              <a href="community" className="center">
+                Community Impact
               </a>
             </li>
             <li

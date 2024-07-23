@@ -14,7 +14,10 @@ export const Paths = () => {
           <Route path="about" element={<AboutPage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="learn" element={<LearnPage />} />
-          <Route path="program" element={<ProgramPage />} />
+          <Route path="community" element={<ProgramPage />} />
+          <Route path="learn/python" element={<ProgramPage />} />
+          <Route path="learn/java" element={<ProgramPage />} />
+          <Route path="learn/cplusplus" element={<ProgramPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
