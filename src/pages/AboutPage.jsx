@@ -4,14 +4,14 @@ import Footer from "../components/Footer";
 
 export const AboutPage = () => {
   const about = ["About", "About"];
-  const founder = ["Founders", "Founders"];
+  const founder = ["Our Team", "Our Team"];
 
   return (
     <>
       <Header classes="pt-3 px-3"></Header>
 
       <div class="container-fluid mt-5 pt-3">
-        <div class="row bg-secondary text-center py-3">
+        <div class="row text-center py-3">
           <h1>
             <TypedComponent strings={about} doesLoop={false}></TypedComponent>
           </h1>
@@ -51,7 +51,7 @@ export const AboutPage = () => {
             <br />
           </div>
         </div>
-        <div class="row bg-secondary text-center py-3">
+        <div class="row text-center py-3">
           <h1>
             <TypedComponent strings={founder} doesLoop={false}></TypedComponent>
           </h1>
@@ -66,11 +66,13 @@ export const AboutPage = () => {
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Kaiyo Igaki</h5>
+                <h5 class="card-title fw-bold">Kaiyo Igaki</h5>
                 <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Hi! My name is Kaiyo Igaki, and I'm a senior at Granada Hills
+                  Charter. My biggest passions are web development (as painful
+                  as it is sometimes) and chemistry. Outside of school, I like
+                  to play the piano and compete in video game tournaments with
+                  friends!
                 </p>
               </div>
             </div>
@@ -81,11 +83,13 @@ export const AboutPage = () => {
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Raj Patel</h5>
+                <h5 class="card-title fw-bold">Raj Patel</h5>
                 <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Hello! My name is Raj Patel, and I am currently a senior
+                  enrolled in the IB program at Granada Hills Charter High
+                  School. Two of my biggest passions are tech and biology, and
+                  outside of school, I love being physically active, listening
+                  to music, and spending time with family and friends.
                 </p>
               </div>
             </div>

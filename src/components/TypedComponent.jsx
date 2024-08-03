@@ -26,7 +26,7 @@ const TypedComponent = ({ strings, doesLoop }) => {
     };
   }, [strings]);
 
-  return <span ref={typedElementRef} />;
+  return <span className="code-font-bold" ref={typedElementRef} />;
 };
 
 TypedComponent.propTypes = {
