@@ -2,7 +2,9 @@ import React, { useState } from "react";
 
 const Header = (props) => {
   return (
-    <nav className={"navbar fixed-top navbar-expand-lg " + props.classes}>
+    <nav
+      className={"navbar fixed-top navbar-expand-lg bg-white " + props.classes}
+    >
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           The T in STEM
