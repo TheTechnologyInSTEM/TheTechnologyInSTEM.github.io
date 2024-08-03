@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@0;1&display=swap");
 
 * {
   font-family: "Poppins", sans-serif;
@@ -9,6 +10,17 @@
 html,
 body {
   height: 100%;
+}
+
+.font-code {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.overflow-x {
+  overflow-x: hidden;
 }
 
 .c-img {
@@ -25,6 +37,10 @@ body {
 
 .card-img-top {
   width: 100%;
-  height: 15vw;
+  height: 100%;
   object-fit: cover;
+}
+
+.no-border {
+  border: none !important;
 }

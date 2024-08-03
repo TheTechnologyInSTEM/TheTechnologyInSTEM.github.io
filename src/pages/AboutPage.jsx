@@ -1,13 +1,20 @@
 import Header from "../components/Header";
+import TypedComponent from "../components/TypedComponent";
+import Footer from "../components/Footer";
 
 export const AboutPage = () => {
+  const about = ["About", "About"];
+  const founder = ["Founders", "Founders"];
+
   return (
     <>
       <Header classes="pt-3 px-3"></Header>
 
       <div class="container-fluid mt-5 pt-3">
-        <div class="row bg-primary text-center py-3">
-          <h1>About</h1>
+        <div class="row bg-secondary text-center py-3">
+          <h1>
+            <TypedComponent strings={about} doesLoop={false}></TypedComponent>
+          </h1>
         </div>
         <div class="row py-3">
           <div class="col mx-10">
@@ -44,37 +51,47 @@ export const AboutPage = () => {
             <br />
           </div>
         </div>
-        <div class="row bg-primary text-center py-3">
-          <h1>Founders</h1>
+        <div class="row bg-secondary text-center py-3">
+          <h1>
+            <TypedComponent strings={founder} doesLoop={false}></TypedComponent>
+          </h1>
         </div>
-      </div>
 
-      <div className="container-fluid">
-        <div class="row text-center">
-          <div class="col">
-            <img
-              class="img-fluid"
-              src="https://i.postimg.cc/4NvSt1XT/IMG-3265.jpg"
-            ></img>
-          </div>
-          <div className="col">
-            <h1>hi</h1>
+        <div className="row py-3">
+          <div class="card-group mx-auto w-50">
+            <div class="card mx-3 no-border">
+              <img
+                src="https://i.postimg.cc/4NvSt1XT/IMG-3265.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kaiyo Igaki</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+            <div class="card mx-3 no-border">
+              <img
+                src="https://i.postimg.cc/dtmJ1dXh/452615222-1026020985545753-5136806581015565756-n.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Raj Patel</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row text-center">
-          <div className="col">
-            <img
-              class="img-fluid"
-              src="https://i.postimg.cc/dtmJ1dXh/452615222-1026020985545753-5136806581015565756-n.jpg"
-            ></img>
-          </div>
-          <div class="col">
-            <img
-              class="img-fluid"
-              src="https://i.postimg.cc/4NvSt1XT/IMG-3265.jpg"
-            ></img>
-          </div>
-        </div>
+        <Footer></Footer>
       </div>
     </>
   );
