@@ -18,7 +18,7 @@ const slides = [
     buttonLink: "community",
   },
   {
-    image: "https://i.postimg.cc/66mXkvty/Screenshot-2024-07-20-222157.png",
+    image: "https://i.postimg.cc/br22FGRK/Screenshot-2024-08-04-125447.png",
     alt: "Slide 3",
     caption1: "Versatile, Powerful, Readable",
     caption2: "Python",
@@ -26,7 +26,7 @@ const slides = [
     buttonLink: "learn/python",
   },
   {
-    image: "https://i.postimg.cc/66mXkvty/Screenshot-2024-07-20-222157.png",
+    image: "https://i.postimg.cc/fyZJ5HJ0/Screenshot-2024-08-04-125602.png",
     alt: "Slide 4",
     caption1: "Cross-Platform Development",
     caption2: "Java",
@@ -34,7 +34,7 @@ const slides = [
     buttonLink: "learn/java",
   },
   {
-    image: "https://i.postimg.cc/66mXkvty/Screenshot-2024-07-20-222157.png",
+    image: "https://i.postimg.cc/YSkZrYGz/Screenshot-2024-08-04-125643.png",
     alt: "Slide 5",
     caption1: "High-Performance",
     caption2: "C++",
