@@ -43,6 +43,7 @@ body {
   height: 100vh;
   object-fit: cover;
   filter: blur(1rem) brightness(0.4);
+  transform: scale(1.1);
 }
 
 .carousel-inner {
@@ -58,4 +59,13 @@ body {
 
 .no-border {
   border: none !important;
+}
+
+.col img {
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.4);
+}
+
+.col div {
 }
