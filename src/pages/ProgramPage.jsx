@@ -6,7 +6,7 @@ export const ProgramPage = () => {
     <>
       <Header classes="pt-3 px-3" text="Programs"></Header>
       <div className="container-fluid pt-6">
-        <div className="row text-center">
+        <div className="row text-center pb-3">
           <h1 className="fw-bold">Community Impact</h1>
         </div>
         <div className="row">
@@ -59,7 +59,7 @@ export const ProgramPage = () => {
           <div className="col">
             <img
               className="img-fluid"
-              src="https://i.postimg.cc/02w8fTjw/unnamed-6.jpg"
+              src="https://i.postimg.cc/Cxnmd4vY/unnamed-6-transformed.jpg"
             />
           </div>
           <div className="col">
