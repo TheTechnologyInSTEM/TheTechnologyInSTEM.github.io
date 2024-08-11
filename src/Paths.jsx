@@ -6,6 +6,7 @@ import { LearnPage } from "./pages/LearnPage";
 import { ProgramPage } from "./pages/ProgramPage";
 import JavaPage from "./pages/JavaPage";
 import PythonVideoPage from "./pages/PythonVideoPage";
+import PythonPage from "./pages/PythonPage";
 
 export const Paths = () => {
   return (
@@ -17,7 +18,7 @@ export const Paths = () => {
           <Route path="contact" element={<ContactPage />} />
           <Route path="learn" element={<LearnPage />} />
           <Route path="community" element={<ProgramPage />} />
-          <Route path="learn/python" element={<ProgramPage />} />
+          <Route path="learn/python" element={<PythonPage />} />
           <Route path="learn/java" element={<JavaPage />} />
           <Route path="learn/cplusplus" element={<ProgramPage />} />
           <Route path="learn/python/videos" element={<PythonVideoPage />} />

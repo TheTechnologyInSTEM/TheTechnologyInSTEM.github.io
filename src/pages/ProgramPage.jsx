@@ -38,8 +38,15 @@ export const ProgramPage = () => {
           </div>
           <div className="col">
             <div className="m-5 text-center">
-              <h1 className="fw-bold">The T in STEM</h1>
-              <p className="fs-3">write something here</p>
+              <h1 className="fw-bold">Our Impact</h1>
+              <p className="fs-3 mt-5">
+                At the T in STEM, we use fun, creative projects to teach
+                computer programming fundamentals in an enjoyable and appealing
+                way. <br /> <br />
+                Our students walk away from our class not only with a strong
+                foundation in computer programming, but also with important STEM
+                skills like finding creative solutions to problems.
+              </p>
             </div>
           </div>
           <div className="col">
