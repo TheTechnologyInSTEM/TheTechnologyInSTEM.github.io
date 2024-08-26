@@ -2,7 +2,7 @@ import React from "react";
 
 const slides = [
   {
-    image: "https://i.postimg.cc/v87L4W2N/unnamed-2.jpg",
+    image: "https://i.postimg.cc/W4gzRM2Z/unnamed-19.jpg",
     alt: "Slide 1",
     caption1: "Made for Students, by Students",
     caption2: "The T in STEM",
@@ -10,7 +10,7 @@ const slides = [
     buttonLink: "about",
   },
   {
-    image: "https://i.postimg.cc/1z94Yqrf/unnamed-3.jpg",
+    image: "https://i.postimg.cc/MTYGHqfK/unnamed-20.jpg",
     alt: "Slide 2",
     caption1: "Creating Opportunities Through Code",
     caption2: "In-Person Classes",
@@ -18,7 +18,7 @@ const slides = [
     buttonLink: "community",
   },
   {
-    image: "https://i.postimg.cc/br22FGRK/Screenshot-2024-08-04-125447.png",
+    image: "https://i.postimg.cc/rm58bcNN/unnamed-2.png",
     alt: "Slide 3",
     caption1: "Versatile, Powerful, Readable",
     caption2: "Python",
@@ -26,7 +26,7 @@ const slides = [
     buttonLink: "learn/python",
   },
   {
-    image: "https://i.postimg.cc/fyZJ5HJ0/Screenshot-2024-08-04-125602.png",
+    image: "https://i.postimg.cc/tJyXGfrQ/unnamed-3.png",
     alt: "Slide 4",
     caption1: "Cross-Platform Development",
     caption2: "Java",
@@ -34,7 +34,7 @@ const slides = [
     buttonLink: "learn/java",
   },
   {
-    image: "https://i.postimg.cc/YSkZrYGz/Screenshot-2024-08-04-125643.png",
+    image: "https://i.postimg.cc/3NB38B6y/unnamed-4.png",
     alt: "Slide 5",
     caption1: "High-Performance",
     caption2: "C++",
@@ -42,7 +42,7 @@ const slides = [
     buttonLink: "learn/cplusplus",
   },
   {
-    image: "https://i.postimg.cc/jSq4yLn4/unnamed-5.jpg",
+    image: "https://i.postimg.cc/DZhZ78ZM/unnamed-21.jpg",
     alt: "Slide 6",
     caption1: "Want to help our mission?",
     caption2: "Let's Collaborate!",

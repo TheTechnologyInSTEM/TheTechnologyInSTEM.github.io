@@ -9,10 +9,10 @@ export const ContactPage = () => {
       <Header classes="pt-3 px-3"></Header>
       <div className="container-fluid pt-8">
         <div className="row mx-7">
-          <div className="col text-center mx-10">
-            <div className="my-auto">
+          <div className="col text-center">
+            <div className="">
               <h1 className="fw-bold">Get In Touch</h1>
-              <p>
+              <h3>
                 Questions? Comments? Concerns? <br />
                 <br />
                 Please feel free to share! Provided below are our email, our
@@ -31,10 +31,8 @@ export const ContactPage = () => {
                 </a>
                 <br />
                 <br />
-                <p>
-                  Curriculum Feedback: <a href="">Click Here</a>
-                </p>
-              </p>
+                Curriculum Feedback: <a href="">Click Here</a>
+              </h3>
             </div>
           </div>
         </div>

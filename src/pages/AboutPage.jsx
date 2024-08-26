@@ -78,7 +78,7 @@ export const AboutPage = () => {
             </div>
             <div class="card mx-3 no-border">
               <img
-                src="https://i.postimg.cc/dtmJ1dXh/452615222-1026020985545753-5136806581015565756-n.jpg"
+                src="https://i.postimg.cc/Wzs9v6gf/unnamed-1-BR09-CDewj-transformed.png"
                 class="card-img-top"
                 alt="..."
               />
