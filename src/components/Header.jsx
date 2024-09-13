@@ -43,9 +43,9 @@ const Header = (props) => {
                 Community Impact
               </a>
             </li>
-            <li class="nav-item dropdown">
+            <li className="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle disabled"
+                className="nav-link dropdown-toggle disabled"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -53,19 +53,19 @@ const Header = (props) => {
               >
                 Learn
               </a>
-              <ul class="dropdown-menu">
+              <ul className="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="/learn/python">
+                  <a className="dropdown-item" href="/learn/python">
                     Python
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="/learn/java">
+                  <a className="dropdown-item" href="/learn/java">
                     Java
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="/learn/cplusplus">
+                  <a className="dropdown-item" href="/learn/cplusplus">
                     C++
                   </a>
                 </li>
