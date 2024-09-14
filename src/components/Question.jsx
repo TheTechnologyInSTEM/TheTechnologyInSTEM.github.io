@@ -1,23 +1,22 @@
 import React, { useState } from "react";
 
 const Question = ({ options, question, questionNo, correctIndex }) => {
+  const webAppUrl = "<WEB_APP_URL_PLACEHOLDER>";
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleSelection = (index) => {
     setSelectedOption(index);
 
-    fetch(
-      "https://script.google.com/macros/s/AKfycbw2HT4P2djq_71jy35QYT7gvRqmuxHJe5lmjI_7uRIrRdKKd3Ag9jmUAj0-RCxmjNT4Aw/exec",
-      {
-        method: "POST",
-        body: JSON.stringify({
-          questionID: questionNo,
-          correct: index === correctIndex,
-        }),
-        headers: { "Content-Type": "application/json" },
-        mode: "no-cors",
-      }
-    )
+    fetch(webAppUrl, {
+      method: "POST",
+      body: JSON.stringify({
+        questionID: questionNo,
+        correct: index === correctIndex,
+        answerSelected: index,
+      }),
+      headers: { "Content-Type": "application/json" },
+      mode: "no-cors",
+    })
       .then((response) => response.json())
       .then((data) => {
         if (data.status !== "success") {
