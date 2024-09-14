@@ -1,19 +1,30 @@
 import React, { useState } from "react";
 
-const Question = ({
-  options,
-  question,
-  questionNo,
-  explanation,
-  correctIndex,
-}) => {
+const Question = ({ options, question, questionNo, correctIndex }) => {
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleSelection = (index) => {
     setSelectedOption(index);
-    if (index === correctIndex - 1) {
-      console.log(`Correct answer selected (${correctIndex})`);
-    }
+
+    fetch(
+      "https://script.google.com/macros/s/AKfycbw2HT4P2djq_71jy35QYT7gvRqmuxHJe5lmjI_7uRIrRdKKd3Ag9jmUAj0-RCxmjNT4Aw/exec",
+      {
+        method: "POST",
+        body: JSON.stringify({
+          questionID: questionNo,
+          correct: index === correctIndex,
+        }),
+        headers: { "Content-Type": "application/json" },
+        mode: "no-cors",
+      }
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.status !== "success") {
+          console.log("Error submitting question data.");
+        }
+      })
+      .catch((error) => console.error("Error:", error));
   };
 
   const handleRetry = (index) => {
@@ -71,7 +82,7 @@ const Question = ({
           </div>
         </div>
       ))}
-      {selectedOption !== null && (
+      {selectedOption !== null && selectedOption !== correctIndex && (
         <div className="text-center mt-3">
           <button
             type="button"
