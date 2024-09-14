@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
 const Question = ({ options, question, questionNo, correctIndex }) => {
-  const webAppUrl = "<WEB_APP_URL_PLACEHOLDER>";
+  const webAppUrl =
+    import.meta.env.VITE_WEB_APP_URL || "<WEB_APP_URL_PLACEHOLDER>";
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleSelection = (index) => {
