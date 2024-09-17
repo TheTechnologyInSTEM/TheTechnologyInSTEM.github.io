@@ -66,7 +66,7 @@ export default function CodeDisplay({ code, language }) {
   };
 
   return (
-    <div className="px-10">
+    <div>
       <button
         ref={buttonRef}
         onClick={copyToClipboard}
