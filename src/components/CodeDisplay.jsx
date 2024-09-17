@@ -37,7 +37,23 @@ export default function CodeDisplay({ code, language }) {
 
   const copyToClipboard = () => {
     if (codeRef.current) {
-      navigator.clipboard.writeText(codeRef.current.innerText);
+      let copyContent = []
+      code.split('\n').forEach(line => {
+        if (!line.endsWith("// [!code focus]")) {
+          if (line.endsWith("// [!code ++]")) {
+            copyContent.push(line.substring(0, line.indexOf("// [!code ++]")));
+          } else if (line.endsWith("// [!code --]")) {
+            copyContent.push(line.substring(0, line.indexOf("// [!code --]")));
+          } else if (line.endsWith("// [!code highlight]")) {
+            copyContent.push(line.substring(0, line.indexOf("// [!code highlight]")));
+          } else {
+            copyContent.push(line);
+          }
+        }
+      });
+      let copyString = copyContent.join("\n")
+
+      navigator.clipboard.writeText(copyString);
       buttonRef.current.innerText = "Copied!";
 
       buttonRef.current.classList.add("btn-clicked");
