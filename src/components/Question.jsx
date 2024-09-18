@@ -33,7 +33,7 @@ const Question = ({ options, question, questionNo, correctIndex }) => {
 
   return (
     <div className="mx-10 text-start mt-2">
-      <p className="fs-5">{question}</p>
+      <p className="text-center">{question}</p>
       {options.map((option, index) => (
         <div className="form-check mb-2" key={index}>
           <input
@@ -68,7 +68,7 @@ const Question = ({ options, question, questionNo, correctIndex }) => {
             </span>
           </label>
           <div
-            className={`rounded p-1 px-3 bg-secondary border border-${
+            className={`rounded p-1 px-3 text-center bg-secondary border border-${
               index === correctIndex ? "success" : "danger"
             }`}
             style={{

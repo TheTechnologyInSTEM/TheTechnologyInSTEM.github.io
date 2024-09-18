@@ -2,13 +2,14 @@ import React from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import CodeDisplay from '../../components/CodeDisplay'
+import Question from '../../components/Question';
 
 const VariablePage = () => {
   return (
     <>
         <Header classes="pt-3 px-3"></Header>
         <div className='text-center pt-7'>
-            <div style={{position: 'relative', right: "20vw", left: "20vw", width: "60vw"}}>
+            <div style={{position: 'relative', right: "15vw", left: "15vw", width: "70vw"}}>
                 <h1>Java - Variables</h1>
                 <h3 className='fw-bold'>What is a variable?</h3>
                 <p>The formal definition of a variable is a storage location for data in a program. To put this in simpler terms, let's think of it as an analogy:</p>
@@ -29,6 +30,16 @@ int example_variable = 42; //"int" is short for "integer" in Java!
 int example_variable2 = 0;
 int example_variable3 = 24 + 5;
 Note: You need to end all of your lines with the semi-colon in Java! (;)// [!code focus]`} language="java" />
+                <h5 className='fw-bold pt-2'>Quick-Check!</h5>
+                <Question question="Which of the following is a correct way to declare a variable?"
+          questionNo="1"
+          options={[
+            { text: "(TYPE) (NAME) = (VALUE);", explanation: "Correct! First specify type, then name, then use the assignment operator to assign a value." },
+            { text: "(NAME) (TYPE) = (VALUE);", explanation: "Incorrect. Try again!" },
+            { text: "(VALUE) = (TYPE) (NAME);", explanation: "Incorrect. Try again!" },
+            { text: "(TYPE) (NAME)", explanation: "Incorrect. Remember the semi-colon!!" },
+          ]}
+          correctIndex={0}/>
                 <h4 className='fw-bold'>Doubles</h4>
                 <p>Next, we have doubles. Like integers, doubles are numbers, but they can be either whole numbers OR numbers with decimals. Here's how to use them in Java:</p>
                 <CodeDisplay code={`//Creating Doubles in Java // [!code highlight]
@@ -66,6 +77,9 @@ age = 17;
 height = 190.4;
 likesCats = false;
 `} language='java' />
+                <h3 className='fw-bold'>Wrap-Up</h3>
+                <p>Variables are used to store data in programming. In Java, variables can store 4 different kinds of info: integers (whole numbers), doubles (whole numbers/numbers with decimals), strings (words), and booleans (true/false).</p>
+                <p>When declaring variables in Java, we start by saying the type of variable, then the name, and finally, we use the assignment operator to assign a value to the variable. Names for variables must start with letters, and should be named clearly to make your code easier to read!</p>
             </div>
         </div>
         <Footer></Footer>
