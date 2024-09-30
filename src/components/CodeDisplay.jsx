@@ -37,21 +37,23 @@ export default function CodeDisplay({ code, language }) {
 
   const copyToClipboard = () => {
     if (codeRef.current) {
-      let copyContent = []
-      code.split('\n').forEach(line => {
+      let copyContent = [];
+      code.split("\n").forEach((line) => {
         if (!line.endsWith("// [!code focus]")) {
           if (line.endsWith("// [!code ++]")) {
             copyContent.push(line.substring(0, line.indexOf("// [!code ++]")));
           } else if (line.endsWith("// [!code --]")) {
             copyContent.push(line.substring(0, line.indexOf("// [!code --]")));
           } else if (line.endsWith("// [!code highlight]")) {
-            copyContent.push(line.substring(0, line.indexOf("// [!code highlight]")));
+            copyContent.push(
+              line.substring(0, line.indexOf("// [!code highlight]"))
+            );
           } else {
             copyContent.push(line);
           }
         }
       });
-      let copyString = copyContent.join("\n")
+      let copyString = copyContent.join("\n");
 
       navigator.clipboard.writeText(copyString);
       buttonRef.current.innerText = "Copied!";
@@ -60,25 +62,34 @@ export default function CodeDisplay({ code, language }) {
 
       setTimeout(() => {
         buttonRef.current.classList.remove("btn-clicked");
-        buttonRef.current.innerText = "Copy";
+        buttonRef.current.innerText = "Copy Code";
       }, 3000);
     }
   };
 
   return (
     <div>
-      <button
-        ref={buttonRef}
-        onClick={copyToClipboard}
-        className="btn btn-secondary bg-transparent desktop-only text-light"
-        style={{
-          position: "absolute",
-          right: "11.5rem",
-          top: "7rem",
-        }}
+      <div
+        style={{ backgroundColor: "#424242" }}
+        className="text-light text-start px-2 py-1 font-monospace rounded-top"
       >
-        Copy
-      </button>
+        {language ? language : "the t in stem"}
+        <button
+          ref={buttonRef}
+          onClick={copyToClipboard}
+          className="btn btn-secondary bg-transparent desktop-only text-light"
+          style={{
+            padding: "0rem",
+            marginRight: "0.5rem",
+            border: "none",
+            fontSize: "1rem",
+            position: "absolute",
+            right: "0rem",
+          }}
+        >
+          Copy Code
+        </button>
+      </div>
       <div ref={codeRef} dangerouslySetInnerHTML={{ __html: html }} />
     </div>
   );

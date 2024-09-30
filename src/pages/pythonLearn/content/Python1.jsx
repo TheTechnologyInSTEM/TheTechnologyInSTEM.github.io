@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
+import NextPrev from "../../../components/NextPrev";
 
 const Python1 = () => {
   return (
@@ -45,9 +46,25 @@ const Python1 = () => {
           Go to the{" "}
           <a href="https://code.visualstudio.com/" target="blank">
             official VS Code Website
-          </a>
+          </a>{" "}
+          and install the appropriate version for your operating system using
+          the blue button in the center of the screen.
+        </p>
+        <p>
+          Go through the installation process, and make sure to check "Add to
+          PATH!"
+        </p>
+        <p>
+          Once it's installed open it up! Click on the icon on the left with
+          four squares to open your extensions menu. Type "Python" into the
+          search bar, and install the first extension that comes up (it should
+          have Microsoft lsited as the developer).
         </p>
       </div>
+      <NextPrev
+        lastPath={"/learn/python"}
+        nextPath={"/learn/python/lesson-2"}
+      ></NextPrev>
       <Footer></Footer>
     </>
   );

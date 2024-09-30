@@ -160,3 +160,10 @@ code {
   padding-inline: 0.5em;
   opacity: 0.4;
 }
+
+.page-content {
+  position: relative;
+  right: 15vw;
+  left: 15vw;
+  width: 70vw;
+}
