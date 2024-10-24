@@ -58,6 +58,56 @@ turtle.forward(400)
 `}
           language="python"
         ></CodeDisplay>
+        <p>Or backward:</p>
+        <CodeDisplay
+          code={`import turtle
+turtle.backward(400)
+`}
+          language={"python"}
+        ></CodeDisplay>
+        <p>
+          If you're using VS code, the play button at the top right of your
+          screen should be able to run this code. You'll see that the turtle
+          does what you tell it to do, but then the window closes immediately
+          afterward.
+        </p>
+        <p>
+          To make the window stay open, we use the mainloop() function at the
+          end of our code:
+        </p>
+        <CodeDisplay
+          code={`import turtle
+turtle.forward(400)
+
+turtle.mainloop()
+`}
+          language={"python"}
+        ></CodeDisplay>
+        <p>
+          Now that our turtle stays on the screen, we can try some more things!
+          Let’s learn how to turn the turtle:
+        </p>
+        <CodeDisplay
+          code={`import turtle
+
+turtle.forward(100)
+turtle.right(90)
+# makes the turtle turn right 90 degrees!
+turtle.backward(100)
+turtle.left(45)
+# makes the turtle turn left 45 degrees!
+
+turtle.mainloop()
+# always end your code with turtle.mainloop()!
+`}
+          language={"python"}
+        ></CodeDisplay>
+        <h3 className="fw-bold">Challenge - Draw a Square</h3>
+        <p>
+          That’s all for this lesson! But before you go, try and make your
+          turtle draw a square with a side length of 300 pixels. The solution
+          will be at the start of the next lesson!
+        </p>
       </div>
       <NextPrev
         lastPath={"/learn/python/lesson-1"}
