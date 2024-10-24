@@ -7,6 +7,7 @@ const Question = ({ options, question, questionNo, correctIndex }) => {
 
   const handleSelection = (index) => {
     setSelectedOption(index);
+    console.log(index);
 
     fetch(webAppUrl, {
       method: "POST",
@@ -24,7 +25,9 @@ const Question = ({ options, question, questionNo, correctIndex }) => {
           console.log("Error submitting question data.");
         }
       })
-      .catch((error) => console.error("Error:", error));
+      .catch((error) => {
+          console.error(`Error: ${error}`);
+      });
   };
 
   const handleRetry = (index) => {

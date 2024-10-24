@@ -83,7 +83,7 @@ function ImageCarousel() {
                 {slide.caption2}
               </h1>
               <a href={slide.buttonLink}>
-                <button className="btn btn-primary px-4 py-2 fs-3 mt-5">
+                <button className="btn btn-outline-primary px-4 py-2 fs-3 mt-5 text-light">
                   {slide.buttonText}
                 </button>
               </a>
