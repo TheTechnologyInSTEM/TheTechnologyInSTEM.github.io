@@ -143,7 +143,6 @@ names.set(index, "NewValue"); // Changes value at index
 
 // Getting Size
 int size = names.size(); // Returns the number of elements
-
 `}
           language={"java"}
         ></CodeDisplay>

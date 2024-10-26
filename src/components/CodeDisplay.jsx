@@ -56,7 +56,7 @@ export default function CodeDisplay({ code, language }) {
       let copyString = copyContent.join("\n");
 
       navigator.clipboard.writeText(copyString);
-      buttonRef.current.innerText = "Copied!";
+      buttonRef.current.innerText = "✓ Copied!";
 
       buttonRef.current.classList.add("btn-clicked");
 
@@ -71,7 +71,7 @@ export default function CodeDisplay({ code, language }) {
     <div>
       <div
         style={{ backgroundColor: "#424242" }}
-        className="text-light text-start px-2 py-1 font-monospace rounded-top"
+        className="text-light text-start px-4 py-1 font-monospace rounded-top"
       >
         {language ? language : "the t in stem"}
         <button
@@ -80,7 +80,7 @@ export default function CodeDisplay({ code, language }) {
           className="btn btn-secondary bg-transparent desktop-only text-light"
           style={{
             padding: "0rem",
-            marginRight: "0.5rem",
+            marginRight: "1.5rem",
             border: "none",
             fontSize: "1rem",
             position: "absolute",

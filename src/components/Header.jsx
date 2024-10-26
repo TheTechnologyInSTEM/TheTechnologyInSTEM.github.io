@@ -45,7 +45,7 @@ const Header = (props) => {
             </li>
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle disabled"
+                className="nav-link dropdown-toggle"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"

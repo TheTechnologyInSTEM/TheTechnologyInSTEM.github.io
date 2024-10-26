@@ -38,7 +38,8 @@ const OperatorsPage = () => {
 int goodbye = 1;
 System.out.println(hello + goodbye); 
 // Result: 2
-System.out.println() is a useful line of code to print the output of our code!`}
+System.out.println() is a useful line of code to print the output of our code!
+`}
             language="java"
           />
 
@@ -52,7 +53,8 @@ System.out.println() is a useful line of code to print the output of our code!`}
 int exit = 2;
 int result = welcome - exit;
 System.out.println(result); 
-// Result: 3`}
+// Result: 3
+`}
             language="java"
           />
 
@@ -66,7 +68,8 @@ System.out.println(result);
 int water = 10;
 double result = fire * water;
 System.out.println(result); 
-// Result: 100.0`}
+// Result: 100.0
+`}
             language="java"
           />
 
@@ -77,7 +80,8 @@ System.out.println(result);
 int aliens = 5;
 int result = space / aliens;
 System.out.println(result); 
-// Result: 5`}
+// Result: 5
+`}
             language="java"
           />
 

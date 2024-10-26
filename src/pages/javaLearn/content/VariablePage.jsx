@@ -107,7 +107,8 @@ Note: You need to end all of your lines with the semi-colon in Java! (;)// [!cod
             code={`//Creating Doubles in Java // [!code highlight]
 double myDouble = 7.0;
 double myDouble2 = 14.5;
-double 3Double = 3.0; //You can only start variable names with letters! // [!code --]`}
+double 3Double = 3.0; //You can only start variable names with letters! // [!code --]
+`}
             language="java"
           />
           <h4 className="fw-bold">Strings</h4>
@@ -182,7 +183,7 @@ likesCats = false;
         </div>
       </div>
       <NextPrev
-        lastPath="/"
+        lastPath="/learn/java"
         nextPath="/learn/java/variableQuestions"
       ></NextPrev>
       <Footer></Footer>

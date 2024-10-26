@@ -31,7 +31,6 @@ export const ContactPage = () => {
                 </a>
                 <br />
                 <br />
-                Curriculum Feedback: <a href="">Click Here</a>
               </h3>
             </div>
           </div>

@@ -3,6 +3,7 @@ import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import CodeDisplay from "../../../components/CodeDisplay";
 import NextPrev from "../../../components/NextPrev";
+import ConstructionAlert from "../../../components/ConstructionAlert";
 
 const DataStructuresPage = () => {
   return (
@@ -10,6 +11,7 @@ const DataStructuresPage = () => {
       <Header classes="pt-3 px-3"></Header>
       <div className="page-content pt-7">
         <h1 className="fw-bold">Conditionals</h1>
+        <ConstructionAlert></ConstructionAlert>
         <p>
           Conditionals check whether something is true or false, then run code
           depending on what the result is.
