@@ -6,7 +6,7 @@ const NextPrev = ({
   practiceProblems = null,
 }) => {
   return (
-    <div className="container text-start py-3 bg-light">
+    <div className="container text-start py-3">
       <hr></hr>
       <div className="row pt-2">
         <div className="col text-start">

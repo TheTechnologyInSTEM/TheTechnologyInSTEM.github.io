@@ -167,3 +167,15 @@ code {
   left: 15vw;
   width: 70vw;
 }
+
+@media (max-width: 832px) {
+  .carousel-caption {
+    top: 60%;
+  }
+}
+
+@media (min-width: 833px) {
+  .carousel-caption {
+    top: 52%;
+  }
+}

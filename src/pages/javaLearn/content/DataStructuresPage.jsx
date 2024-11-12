@@ -3,6 +3,7 @@ import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import CodeDisplay from "../../../components/CodeDisplay";
 import NextPrev from "../../../components/NextPrev";
+import YoutubeEmbed from "../../../components/YoutubeEmbed";
 
 const DataStructuresPage = () => {
   return (
@@ -10,6 +11,7 @@ const DataStructuresPage = () => {
       <Header classes="pt-3 px-3"></Header>
       <div className="page-content pt-7">
         <h1>Data Structures</h1>
+        <YoutubeEmbed videoId={"NGhBzYElU8A"}></YoutubeEmbed>
         <h3 className="fw-bold">Arrays</h3>
         <h6 className="fw-bold">One-Dimensional Array Example</h6>
         <p>Imagine a series of slots where each slot holds a piece of data:</p>

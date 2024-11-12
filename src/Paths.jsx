@@ -23,6 +23,7 @@ import {
   Python6,
   Python7,
   Python8,
+  Python9,
 } from "./pages/pythonLearn/content/exporter";
 import CPlusPage from "./pages/cPlusLearn/CPlusPage";
 
@@ -80,6 +81,10 @@ export const Paths = () => {
         <Route
           path="learn/python/lesson-8"
           element={<Python8></Python8>}
+        ></Route>
+        <Route
+          path="learn/python/lesson-9"
+          element={<Python9></Python9>}
         ></Route>
         <Route
           path="learn/java/dataStructures"

@@ -3,6 +3,7 @@ import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import CodeDisplay from "../../../components/CodeDisplay";
 import NextPrev from "../../../components/NextPrev";
+import YoutubeEmbed from "../../../components/YoutubeEmbed";
 
 const ConditionalsPage = () => {
   return (
@@ -22,6 +23,7 @@ const ConditionalsPage = () => {
           In the same way, conditional statements in programming allow a program
           to choose different actions depending on the situation.
         </p>
+        <YoutubeEmbed videoId={"O_2bWnS_YR0"}></YoutubeEmbed>
         <h3 className="fw-bold">Conditional Syntax</h3>
         <p>
           In many programming languages, such as Java, C++, Python, etc., the

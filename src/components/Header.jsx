@@ -65,7 +65,7 @@ const Header = (props) => {
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/learn/cplusplus">
+                  <a className="dropdown-item disabled" href="/learn/cplusplus">
                     C++
                   </a>
                 </li>

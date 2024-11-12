@@ -77,7 +77,10 @@ function ImageCarousel() {
               className="d-block w-100 c-img"
               alt={slide.alt}
             />
-            <div className="carousel-caption translate-middle start-50 top-50 w-50">
+            <div
+              className="carousel-caption translate-middle start-50 w-100"
+              style={{ position: "absolute" }}
+            >
               <p className="mt-5 fs-1 text-uppercase">{slide.caption1}</p>
               <h1 className="display-1 fw-bolder text-capitalize">
                 {slide.caption2}

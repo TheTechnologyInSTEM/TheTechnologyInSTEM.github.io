@@ -60,6 +60,11 @@ const PythonPage = () => {
               Python 8
             </a>
           </li>
+          <li>
+            <a className="link link-primary" href="/learn/python/lesson-9">
+              Python 9
+            </a>
+          </li>
         </ol>
       </div>
     </>
